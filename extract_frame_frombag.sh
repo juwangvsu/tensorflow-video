@@ -1,0 +1,1 @@
+/media/student/code2/rosbag/extract_frames_frombag.sh

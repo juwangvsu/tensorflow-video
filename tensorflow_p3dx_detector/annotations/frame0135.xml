@@ -1,0 +1,38 @@
+<annotation>
+  <folder>images</folder>
+  <filename>frame0135</filename>
+  <path>/media/student/code1/tensorflow video/tensorflow_p3dx_detector/images/frame0135.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>640</width>
+    <height>480</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>p3dx</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>310</xmin>
+      <ymin>454</ymin>
+      <xmax>357</xmax>
+      <ymax>480</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>drone</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>405</xmin>
+      <ymin>247</ymin>
+      <xmax>452</xmax>
+      <ymax>304</ymax>
+    </bndbox>
+  </object>
+</annotation>
