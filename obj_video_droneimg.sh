@@ -27,11 +27,11 @@ while getopts "h?ed:l:" opt; do
     h|\?)
 	echo "usage: ./obj_video_droneimg.sh -eh"
 	echo "usage: ./obj_video_droneimg.sh -d modelname [-l label]"
-	echo" modelname: ssd_mobilenet_v2_coco_2018_03_29"
-	echo" 		 p3dx_frozen"
-	echo" 		 inception_frozen"
-	echo" label: 	mscoco_label_map.pbtxt"
-	echo" 		 toy_label_map.pbtxt"
+	echo " modelname: ssd_mobilenet_v2_coco_2018_03_29"
+	echo " 		 p3dx_frozen"
+	echo " 		 inception_frozen"
+	echo " label: 	mscoco_label_map.pbtxt"
+	echo " 		 toy_label_map.pbtxt"
         exit 0
         ;;
     e)  
