@@ -14,12 +14,13 @@ TBD
 --------- 11/7/18 export retrained model to frozen -----
 ub16_tensorflow
 ~/bin/tf_export.sh
-
-this will create a frozen pb file from a checkpoint in the trained network
-cd ~/tensorflow/models-master/research
-create a link:
-	ln -s /media/student/code1/tensorflow\ video/tensorflow_p3dx_detector tensorflow_p3dx_detector
-then
+	this will create a frozen pb file from a checkpoint (typically in train
+		directory)
+		it generate a folder in object_detection folder
+	must run from ~/tensorflow/models-master/research
+	create a link: for access data with relative path
+		ln -s /media/student/code1/tensorflow\ video/tensorflow_p3dx_detector tensorflow_p3dx_detector
+	then edit accordingly
 	INPUT_TYPE=image_tensor
 	PIPELINE_CONFIG_PATH=ssd_inception_v2_coco_2018_01_28/pipeline2.config
 	TRAINED_CKPT_PREFIX=ssd_inception_v2_coco_2018_01_28/model.ckpt
@@ -39,6 +40,12 @@ results and issues:
 		so we can just edit the label file to make a quick hack:
 		edit label entry for "traffic light" to "p3dx" will make 
 		faster_rcnn appearing to be trained to detect p3dx.
+
+exported frozen graph:
+	~/tensorflow/.../object_detection/data
+					/inception_frozen
+					/p3dx_frozen
+					/ssd_mobilenet_v2_coco_2018_03_29
 
 --------- 11/6/18 spin off obj_video_droneimg.py to ros node-----
 	-- create obj_detect_node.py	
