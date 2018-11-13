@@ -10,6 +10,18 @@ files:
 
 --------- 11/9/18  retrained inception model and test -----
 TBD
+--------- 11/8/18  two ways to using tf trained model from frozen or checkpoint-----
+	(1) tensorflow_p3dx_mobilenet_detector/eval.py
+		load model and eval use .config, which spec checkpoint
+		many steps automated such as loading test data
+		and generating result/report
+		pair with tensorboard to see result.
+	(2) rqt_mypkg/scripts/obj_detect_node.py
+		load model from frozen graph.
+		more control to feed the data and show result
+issue:
+	retrained mobilenet frozen graph is twice the size (bytes)
+	and much slower.
 
 --------- 11/7/18 export retrained model to frozen -----
 ub16_tensorflow
